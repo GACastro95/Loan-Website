@@ -1,0 +1,26 @@
+<div *ngIf="loan">
+	<h2>{{loan.name}}'s Loan Details</h2>
+	<div><span>ID: </span>{{loan.id}}</div>
+	<div><span>Repayment: </span>{{loan.repayment}}</div>
+	<div><span>Funding:  </span>{{loan.funding}}</div>
+
+	<h3>Edit Details</h3>
+	<div>
+		<label>Name:
+			<input [(ngModel)]="loan.name" placeholder="name">
+		</label>
+	</div>
+	<div>
+		<label>Repayment:
+			<input [(ngModel)]="loan.repayment" placeholder="repayment">
+		</label>
+	</div>
+	<div>
+		<label>Funding:
+			<input [(ngModel)]="loan.funding" placeholder="funding">
+		</label>
+	</div>
+</div>
+
+<button (click)="goBack()">Back</button>
+<button (click)="save()">Update</button>

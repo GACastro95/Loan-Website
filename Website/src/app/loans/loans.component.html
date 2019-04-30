@@ -1,0 +1,23 @@
+<h2>Add Loan</h2>
+
+<div class="inputwrapper">
+  <label>Loanee name: </label><input #loanName />
+  <label>Repayment: </label><input #loanRepayment />
+  <label>Funding: </label><input #loanFunding />
+<p></p>
+  <button class="add" (click)="add(loanName.value, loanRepayment.value, loanFunding.value); loanName.value=''; loanRepayment.value=''; loanFunding.value='';">
+    Add Loan
+  </button>
+</div>
+<div class="listwrapper">
+<h2>Current Loans</h2>
+  <ul class="btn-group">
+  	<li *ngFor="let loan of loans">
+  		<a routerLink="/detail/{{loan.id}}">
+  			<button>ID:{{loan.id}} <br>Name:{{loan.name}}</button>
+  		</a>
+      	<button class="delete" title="delete loan"
+        		(click)="delete(loan)">x</button>
+  	</li>
+  </ul>
+</div>

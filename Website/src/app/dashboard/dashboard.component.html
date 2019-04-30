@@ -1,0 +1,9 @@
+<h2>Loans</h2>
+<div class="grid grid-pad">
+  <a *ngFor="let loan of loans" class="col-1-4"
+  	routerLink="/detail/{{loan.id}}">
+    <div class="module loan">
+      <h4>{{loan.id}}<br>{{loan.name}}</h4>
+    </div>
+  </a>
+</div>

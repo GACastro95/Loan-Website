@@ -1,0 +1,172 @@
+/* LoansComponent's private CSS styles */
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    padding-right: 10px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+.inputwrapper{
+  position: fixed;
+  height:20%;
+}
+.listwrapper{
+  position: fixed;
+  height:75%;
+  top:25%;
+}
+/*.loans {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.loans li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.loans li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.loans li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.loans a {
+  position: relative;
+  text-decoration: none;
+  top: -4px;
+  display: block;
+  width: 250px;
+}
+.loans .badge{
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.9em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}*/
+/*.loans {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.loans li {
+  position: relative;
+  cursor: pointer;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+ 
+.loans li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+ 
+.loans a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
+}
+ 
+.loans a:hover {
+  color:#607D8B;
+}
+ 
+.loans .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}*/
+
+.btn-group {
+  list-style-type: none;
+}
+
+.btn-group a {
+  text-decoration: none;
+}
+
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 5px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  left: 110px;
+  top: -42px;
+  height: 42px;
+  background-color: gray !important;
+  color: white;
+}
+
+button.add {
+  position: relative;
+  top: 10px;
+  left: 110px;
+}
+
